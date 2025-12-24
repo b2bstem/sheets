@@ -1,0 +1,353 @@
+
+% %\documentclass[12pt,fleqn]{exam}
+% \documentclass[12pt]{exam}
+
+% \usepackage[margin=0.75in]{geometry}
+
+% %\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+% %\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+% %\geometry{landscape}                % Activate for for rotated page geometry
+% %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+% \usepackage{graphicx}
+% \graphicspath{ {./images/} }
+
+% \usepackage{subfig}
+% \usepackage{amssymb}
+% \usepackage{epstopdf}
+% \usepackage{multicol}
+% \usepackage{amsmath}
+% \usepackage{enumitem}
+% \usepackage{pifont}
+% \usepackage{bbding}
+
+% \usepackage{array}
+% \usepackage{xcolor}
+% \usepackage{colortbl}
+
+
+% %\usepackage{fontspec}
+% %\usepackage{fontspec}
+% \usepackage[all]{background}
+% \usepackage{textcomp}
+% \usepackage{xcolor}
+% \usepackage[most]{tcolorbox} % Load the tcolorbox package
+% \usepackage[makeroom]{cancel}
+% \usepackage{tikz, pgfplots, pgfmath, pgffor, amssymb}
+% \usetikzlibrary{matrix}
+% \usepackage{tkz-tab}
+% \usepackage{xpatch}
+% % tkz-tab hardcodes $0$ for the zeros
+% \xpatchcmd{\tkzTabLine}{$0$}{$\bullet$}{}{}
+% % we want solid lines
+% \tikzset{t style/.style={style=solid}}
+
+% \usetikzlibrary{arrows}
+% \usepackage{mathtools} % Required for \Aboxed
+% \usepackage{caption} % Required for caption customization
+% \usepackage{subcaption} % Required for subfigures
+% \newcommand{\hh}[1]{{\textcolor{red}{#1}}}
+% \newcommand{\kk}[1]{{\textcolor{cyan}{#1}}}
+% \newcommand{\rr}[1]{{\textcolor{brown}{#1}}}
+% \newcommand{\notebox}[1]{\colorbox{yellow!30}{#1}}
+
+
+
+
+
+
+% %\setmainfont{QTKorrin}
+% %\setmainfont{savedbyzero.ttf}
+% % Set your main document font
+% %\setmainfont{EB Garamond}
+
+% %Optionally, set a different font for sans-serif text
+% %\setsansfont{Fira Sans}
+
+% \pagestyle{headandfoot}
+% \firstpageheader{}{Questions}{}
+% \firstpageheadrule
+% \runningheadrule
+% \firstpagefooter{\textcopyright\ 2025 B2B STEM}{Page \thepage\ of \numpages}{All Rights Reserved}
+% \runningfooter{\textcopyright\ 2025 B2B STEM}{Page \thepage\ of \numpages}{All Rights Reserved}
+
+% %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+% % Configure the watermark
+% \backgroundsetup{
+%   opacity=0.01, % Adjust the transparency (0-1)
+%   scale=0.65,   % Adjust the image size
+%   angle=45,     % Angle of the image (0 = no rotation)
+%   contents={\includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{images/wm1}}
+% }
+
+
+% \title{Logarithms}
+
+% % \author{\newfontfamily{\myspecialfont}{savedbyzero.ttf} % Define the new font family
+% % \myspecialfont % Apply the new font family
+% % B2B STEM 
+% % \endgroup} % End the group, reverting to the previous font}
+
+
+% %\date{}                                           % Activate to display a given date or no date
+% \printanswers 
+
+
+% \begin{document}
+% \maketitle
+% \large{
+% \noindent 
+% Dear Teachers and Students,\\
+
+
+% \noindent
+% This booklet offers problems on systems of equations with two and three variables. The "solutions" and video packages include graphing, substitution, elimination, and matrix methods such as Cramer's Rule and row operations, just to name a couple. To maximize your learning, try solving the problems before reviewing the solutions. This approach will enhance your aptitude in the subject matter and better prepare you for both in-class and standardized tests.\\
+
+% \noindent
+% Additionally, a video solutions package is available, featuring 10 solved problems that are representative of the problem set in this booklet. In these videos, we thoroughly work through each problem and explain my approach to finding the solution.\\
+% \noindent
+
+
+% Please note that this worksheet is designed for practice and reinforcement, not as an initial lesson on the material. We assume that you are already familiar with these concepts from lectures and classes. The purpose of these problems is to help you solidify your understanding and master the material through varied difficulty levels.\\
+
+% \noindent
+% Thank you for supporting our work. We hope that you find this resource valuable. Please share your feedback and suggestions with us using the form provided on our page.\\
+
+
+% \noindent
+% Sincerely,\\
+% B2B STEM Team
+% % \begingroup % Start a new group to limit the scope of the font change
+% % \newfontfamily{\myspecialfont}{savedbyzero.ttf} % Define the new font family
+% % \myspecialfont % Apply the new font family
+% % B2B STEM Team
+% % \endgroup % End the group, reverting to the previous font
+
+
+% }\\
+% % %\textcopyright\ 2025 B2B STEM. All Rights Reserved.
+% % \newpage
+% % \begin{center}
+% % \fbox{\begin{minipage}{0.9\textwidth}
+% % \centering
+% % \textbf{\large COPYRIGHT AND USAGE NOTICE}
+% % \vspace{0.3cm}
+
+% % \textcolor{red}{\textbf{RESTRICTED MATERIAL - FOR AUTHORIZED USE ONLY}}
+% % \vspace{0.2cm}
+
+% % \textbf{Copyright Notice:} This educational material is protected by copyright law. All rights reserved.
+% % \vspace{0.1cm}
+
+% % \textbf{Usage Restrictions:}
+% % \begin{itemize}
+% % \item This worksheet/pamphlet is licensed exclusively for use by the original purchaser.
+% % \item \textbf{Distribution, reproduction, copying, or sharing of this material is strictly prohibited} without explicit written permission from the author.
+% % \item This includes but is not limited to: photocopying, digital copying, email distribution, posting online, or any other form of redistribution.
+% % \item Each copy must be individually purchased and licensed.
+% % \item Violation of these terms may result in legal action for copyright infringement.
+% % \end{itemize}
+
+% % \textbf{Permitted Use:}
+% % \begin{itemize}
+% % \item Personal educational use by the purchaser only
+% % \item Use in the purchaser's classroom with their own students (if applicable)
+% % \item Making personal notes or annotations on your copy
+% % \end{itemize}
+
+% % \vspace{0.1cm}
+% % \textit{For licensing inquiries or permission requests, please contact the author.}
+% % \vspace{0.1cm}
+
+% % \textbf{By using this material, you acknowledge that you have read, understood, and agree to comply with these terms and conditions.}
+% % \end{minipage}}
+% % \end{center}
+% % \newpage
+
+% % % Copyright and Usage Restrictions
+% % \begin{center}
+% % \fbox{\begin{minipage}{0.9\textwidth}
+% % \centering
+% % \textbf{\large COPYRIGHT AND USAGE NOTICE}
+% % \vspace{0.3cm}
+
+% % \textcolor{red}{\textbf{PERSONAL USE ONLY - NO DISTRIBUTION PERMITTED}}
+% % \vspace{0.2cm}
+
+% % \textbf{Copyright Notice:} This educational material is protected by copyright law. All rights reserved.
+% % \vspace{0.1cm}
+
+% % \textbf{STRICT USAGE RESTRICTIONS:}
+% % \begin{itemize}
+% % \item \textbf{THIS MATERIAL IS FOR PERSONAL USE BY THE PURCHASER ONLY}
+% % \item \textbf{NO sharing, distribution, reproduction, or copying is permitted under any circumstances}
+% % \item \textbf{NO classroom use, tutoring use, or educational institution use without separate licensing}
+% % \item \textbf{NO photocopying, scanning, digital copying, or any form of duplication}
+% % \item \textbf{NO email sharing, online posting, cloud sharing, or electronic distribution}
+% % \item \textbf{NO lending, gifting, or transferring to any other person or entity}
+% % \item Each individual user must purchase their own separate license
+% % \item Violation of these terms will result in immediate legal action for copyright infringement
+% % \end{itemize}
+
+% % \textbf{PERMITTED USE - PERSONAL ONLY:}
+% % \begin{itemize}
+% % \item Individual study and practice by the purchaser exclusively
+% % \item Making handwritten personal notes on your individual copy only
+% % \item \textbf{NO OTHER USE IS AUTHORIZED}
+% % \end{itemize}
+
+% % \vspace{0.1cm}
+% % \textbf{\textcolor{red}{IMPORTANT:}} Teachers, tutors, and educational institutions must purchase separate commercial licenses.
+% % \vspace{0.1cm}
+
+% % \textit{For commercial licensing inquiries, please contact the author.}
+% % \vspace{0.1cm}
+
+% % \textbf{By using this material, you acknowledge that you have read, understood, and agree to comply with these strict terms and conditions. Any violation constitutes copyright infringement and will be prosecuted to the full extent of the law.}
+% % \end{minipage}}
+% % \end{center}
+
+
+% \newpage
+
+% % Copyright and Usage Restrictions
+% \begin{center}
+% \fbox{\begin{minipage}{0.9\textwidth}
+% \centering
+% \textbf{\large COPYRIGHT AND USAGE NOTICE}
+% \vspace{0.3cm}
+
+% \textcolor{blue}{\textbf{Personal Use License}}
+% \vspace{0.2cm}
+
+% \textbf{Copyright Notice:} This educational material is protected by copyright law. All rights reserved.
+% \vspace{0.1cm}
+
+% \textbf{What You Can Do (Personal Use):}
+% \begin{itemize}
+% \item Use this material for your own personal study and practice
+% \item Print copies for your personal use only
+% \item Make handwritten notes and annotations on your copies
+% \item Store digital copies on your personal devices for your own use
+% \end{itemize}
+
+% \textbf{Usage Limitations:}
+% \begin{itemize}
+% \item This license is for personal use by the purchaser only
+% \item Please do not share, distribute, or copy this material for others
+% \item Commercial use (including classroom teaching, tutoring, or institutional use) requires a separate license
+% \item Please do not post online, email to others, or upload to shared platforms
+% \item Each person who wants to use this material should purchase their own copy
+% \end{itemize}
+
+% \vspace{0.1cm}
+% \textit{For teachers, tutors, and educational institutions: Please contact us about our educational licensing options.}
+% \vspace{0.1cm}
+
+% \textbf{We appreciate your understanding and respect for our work. By using this material, you agree to these reasonable terms.}
+% \end{minipage}}
+% \end{center}
+
+
+% .\par
+% \setlength{\columnsep}{2.5cm} % Set the gap between columns
+% %\setlength{\columnseprule}{0.5pt} % Add a thin vertical rule
+
+
+% \include{properties}
+% \include{problems}
+% \include{answers}
+% \include{prove}
+% \include{log_form}
+% \include{eval}
+% \include{domainandasymp}
+% \include{plot}
+% \include{expand}
+% \include{singlelog}
+% \include{solve}
+% \include{exp}
+% \include{wordproblems}
+% \include{misc}
+
+% \end{document}
+
+
+
+
+
+
+\title{Logarithmic Expressions and Functions}
+
+\maketitle
+\large{
+\noindent 
+Dear Teachers and Students,\\
+
+\noindent
+This booklet offers problems on systems of equations with two and three variables. The "solutions" and video packages include graphing, substitution, elimination, and matrix methods such as Cramer's Rule and row operations, just to name a couple. To maximize your learning, try solving the problems before reviewing the solutions. This approach will enhance your aptitude in the subject matter and better prepare you for both in-class and standardized tests.\\
+
+\noindent
+Additionally, a video solutions package is available, featuring 10 solved problems that are representative of the problem set in this booklet. In these videos, we thoroughly work through each problem and explain my approach to finding the solution.\\
+\noindent
+
+
+Please note that this worksheet is designed for practice and reinforcement, not as an initial lesson on the material. We assume that you are already familiar with these concepts from lectures and classes. The purpose of these problems is to help you solidify your understanding and master the material through varied difficulty levels.\\
+
+\noindent
+Thank you for supporting our work. We hope that you find this resource valuable. Please share your feedback and suggestions with us using the form provided on our page.\\
+
+
+\noindent
+Sincerely,\\
+B2B STEM Team
+
+
+\newpage
+
+% Copyright and Usage Restrictions
+\begin{center}
+\fbox{\begin{minipage}{0.9\textwidth}
+\centering
+\textbf{\large COPYRIGHT AND USAGE NOTICE}
+\vspace{0.3cm}
+
+\textcolor{blue}{\textbf{Personal Use License}}
+\vspace{0.2cm}
+
+\textbf{Copyright Notice:} This educational material is protected by copyright law. All rights reserved.
+\vspace{0.1cm}
+
+\textbf{What You Can Do (Personal Use):}
+\begin{itemize}
+\item Use this material for your own personal study and practice
+\item Print copies for your personal use only
+\item Make handwritten notes and annotations on your copies
+\item Store digital copies on your personal devices for your own use
+\end{itemize}
+
+\textbf{Usage Limitations:}
+\begin{itemize}
+\item This license is for personal use by the purchaser only
+\item Please do not share, distribute, or copy this material for others
+\item Commercial use (including classroom teaching, tutoring, or institutional use) requires a separate license
+\item Please do not post online, email to others, or upload to shared platforms
+\item Each person who wants to use this material should purchase their own copy
+\end{itemize}
+
+\vspace{0.1cm}
+\textit{For teachers, tutors, and educational institutions: Please contact us about our educational licensing options.}
+\vspace{0.1cm}
+
+\textbf{We appreciate your understanding and respect for our work. By using this material, you agree to these reasonable terms.}
+\end{minipage}}
+\end{center}
+
+
+.\par
+\setlength{\columnsep}{2.5cm} % Set the gap between columns
+%\setlength{\columnseprule}{0.5pt} % Add a thin vertical rule
+
+
+\graphicspath{{exponentials/images}}
+\input{exponentials/properties}
+\input{exponentials/problems}
+

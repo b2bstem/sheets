@@ -1,0 +1,196 @@
+\section*{Plot Using Transformations}
+\chead{Plot Using Transformations}
+\begin{tcolorbox}[title=Hint, colback=teal!10!white, colframe=teal!75!black]
+The table below shows how a function $f(x)$ is transformed under different conditions. The order of transformations is important. Here is the suggested order of transformations
+\begin{itemize}
+    \item Horizontal translation or shift: $f(x)\rightarrow f(x\pm h)$
+    \item Horizontal and vertical stretch (or shrink): $f(x)\rightarrow f(ax) \text{ or }af(x)$.
+    \item Reflections about the $x-$ and $y-$axes: $f(x)\rightarrow f(-x) \text{ or } -f(x)$.
+    \item Vertical translation or shift: $f(x)\rightarrow f(x) \pm k$
+\end{itemize}
+\vspace{0.5in}
+When applying the transformations outlined in the table, it's helpful to select three or more points from the original function and track how each point changes (as illustrated in the last column on the table). This method helps to visualize the transformation accurately. Remember that vertical asymptotes will only be affected by horizontal transformations.
+
+\vspace{0.5in}
+This approach was demonstrated in our solved problems, where we also indicated the direction of each translation.
+\end{tcolorbox}
+\newpage
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%
+% %%%                     PLOT THE FOLLOWING LOGARITHMS
+% %%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection*{Graph Using Transformations. Identify The Domain and The Vertical Asymptote(s)}
+% \begin{tcolorbox}[title=Note, colback=blue!10!white, colframe=blue!75!black]
+% tt
+% \end{tcolorbox}
+
+\noindent These are the cases in which a function $f(x)$ gets transformed. Assume that  $h$, $k$, and $a$ are positive real numbers. This is also the order of transformations in a multi-transformation steps problem. 
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|>{\bfseries}p{0.35\textwidth}|p{0.35\textwidth}|p{0.25\textwidth}|}
+\hline
+\rowcolor{blue!75!black}\color{white}\textbf{Transformation Type} & \color{white}\textbf{Effect on the Graph of \boldmath$f$} & \color{white}\textbf{How Points Change on \boldmath$f$} \\
+\hline
+\textbf{Horizontal translation (shift)} & & \\
+$y = f(x - h)$ & Shift graph right $h$ units &  $(x, y)\rightarrow(x + h, y)$ \\
+$y = f(x + h)$ & Shift graph left $h$ units &  $(x, y)\rightarrow(x - h, y)$ \\
+\hline
+\textbf{Horizontal stretch/shrink} & $a > 1:$Horizontal shrink & \\
+$y = f(a \cdot x)$ & $0 < a < 1:$Horizontal stretch &  $(x, y)\rightarrow\left(\frac{x}{a}, y\right)$ \\
+& Stretch/shrink graph horizontally by a factor of $\frac{1}{a}$ & \\
+\hline
+\textbf{Vertical stretch/shrink} & $a > 1:$Vertical stretch  & \\
+$y = a[f(x)]$ & $0 < a < 1:$Vertical shrink &  $(x, y)\rightarrow(x, ay)$ \\
+& Stretch/shrink graph vertically by a factor of $a$ & \\
+\hline
+\textbf{Reflection} & & \\
+$y = -f(x)$ & Reflect  graph across the $x$-axis &  $(x, y)\rightarrow(x, -y)$ \\
+$y = f(-x)$ & Reflect  graph across the $y$-axis &  $(x, y)\rightarrow(-x, y)$ \\
+\hline
+\textbf{Vertical translation (shift)} & & \\
+$y = f(x) + k$ & Shift graph up $k$ units &  $(x, y)\rightarrow(x, y + k)$ \\
+$y = f(x) - k$ & Shift graph down $k$ units &  $(x, y)\rightarrow(x, y - k)$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+\newpage
+\begin{enumerate}[resume]
+    \item $f(x)=\log_2(x-3)$
+    {\color{blue}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.9\textwidth]{log1_19}
+        \caption{Shift $f(x)=\log_2(x)$ to the right 3 units: $(x,y)\rightarrow(x+3, y)$. Also shift the asymptote from $x=0$ to $x=3$}
+        %\label{fig:myimage}
+    \end{figure}
+}
+% -----------------------------------------------------------------------------------
+    
+\newpage 
+\item $f(x)=\log_3(1+x)+2$
+    {\color{blue}
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_20}
+        \caption{$1^\text{st}$ transformation: $f(x)\rightarrow f(x+1);\log_3(x)\rightarrow\log_3(1+x)$. \\Shift $f(x)$ to the left 1 unit: $(x,y)\rightarrow(x-1,y)$. Move the asymptote $x=0$ to $x=-1$}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_21}
+        \caption{$2^\text{nd}$ transformation: $f(x+1)\rightarrow f(x+1)+2;\log_3(x+1)\rightarrow\log_3(1+x)+2$. \\ Shift $f(x+1)$ up 2 units: $(x,y)\rightarrow(x,y+2)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+
+    
+    }
+    
+% -----------------------------------------------------------------------------------
+    
+\newpage    
+\item $f(x)=4-2\ln(x+2)$
+    {\color{blue}
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_22}
+        \caption{$1^\text{st}$ transformation: $f(x)\rightarrow f(x+2);\ln(x)\rightarrow\ln(x+2)$. \\Shift $f(x)$ to the left 2 unit: $(x,y)\rightarrow(x-2,y)$. Move the asymptote $x=0$ to $x=-2$}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_23}
+        \caption{$2^\text{nd}$ transformation: $f(x+2)\rightarrow 2f(x+2);\ln(x+2)\rightarrow 2\ln(x+2)$. \\ Stretch $f(x+2)$ vertically by 2: $(x,y)\rightarrow(x,2y)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+            \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_24}
+        \caption{$3^\text{rd}$ transformation: $2f(x+2)\rightarrow -2f(x+2);2\ln(x+2)\rightarrow -2\ln(x+2)$. \\ Reflect $2f(x+1)$ about the $x-$axis: $(x,y)\rightarrow(x,-y)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_25}
+        \caption{$4^\text{th}$ transformation: $-2f(x+2)\rightarrow -2f(x+2)+4;-2\ln(x+2)\rightarrow -2\ln(x+2)+4$. \\ Shift $-2f(x+1)$ up 4 units: $(x,y)\rightarrow(x,y+4)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+    }
+
+% -----------------------------------------------------------------------------------
+    
+\newpage 
+\item $f(x)=4-\log(4-x)$
+    {\color{blue}
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_26}
+        \caption{$1^\text{st}$ transformation: $f(x)\rightarrow f(x+4);\log(x)\rightarrow\log(x+4)$. \\Shift $f(x)$ to the left 4 unit: $(x,y)\rightarrow(x-4,y)$. Move the asymptote $x=0$ to $x=-4$}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_27}
+        \caption{$2^\text{nd}$ transformation: $f(x+4)\rightarrow f(-x+4);\log(x+4)\rightarrow\log(-x+4)$. \\ Reflect $f(x+4)$ about the $y-$axis: $(x,y)\rightarrow(-x,y)$. Move the asymptote $x=-4$ to $x=4$}
+        %\label{fig:myimage}
+    \end{figure}
+            \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_28}
+        \caption{$3^\text{rd}$ transformation: $f(-x+4)\rightarrow -f(-x+4);\log(-x+4)\rightarrow -\log(-x+4)$. \\ Reflect $f(-x+4)$ about the $x-$axis: $(x,y)\rightarrow(x,-y)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.8\textwidth]{log1_29}
+        \caption{$4^\text{th}$ transformation: $-f(-x+4)\rightarrow -f(-x+4)+4;-\log(-x+4)\rightarrow -\log(-x+4)+4$. \\ Shift $-f(-x+4)$ up 4 units: $(x,y)\rightarrow(x,y+4)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+    
+    }
+
+\newpage
+\item $y=3\log_2(2x+1)-2$
+    {\color{blue}
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.7\textwidth]{log1_30}
+        \caption{$1^\text{st}$ transformation: $f(x)\rightarrow f(x+1);\log_2(x)\rightarrow\log_2(x+1)$. \\Shift $f(x)$ to the left 1 unit: $(x,y)\rightarrow(x-1,y)$. Move the asymptote $x=0$ to $x=-1$}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.7\textwidth]{log1_31}
+        \caption{$2^\text{st}$ transformation: $f(x+1)\rightarrow f(2x+1);\log_2(x+1)\rightarrow\log_2(2x+1)$. \\ Shrink $f(x+1)$ horizontally by a factor of 2: $(x,y)\rightarrow(x/2,y)$. Move the asymptote $x=-1$ to $x=-0.5$}
+        %\label{fig:myimage}
+    \end{figure}
+            \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.7\textwidth]{log1_32}
+        \caption{$3^\text{rd}$ transformation: $f(2x+1)\rightarrow 3f(2x+1);\log_2(2x+1)\rightarrow 3\log_2(2x+1)$. \\ Stretch $f(2x+1)$ vertically by a factor of 3: $(x,y)\rightarrow(x,3y)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+
+        \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.7\textwidth]{log1_33}
+        \caption{$4^\text{th}$ transformation: $3f(2x+1)\rightarrow 3f(2x+1)-2;3\log_2(2x+1)\rightarrow 3\log_2(2x+1)-1$. \\ Shift $3f(2x+1)$ vertically down by 2 units: $(x,y)\rightarrow(x,y-2)$. The asymptote stays the same.}
+        %\label{fig:myimage}
+    \end{figure}
+    
+}
+\end{enumerate}

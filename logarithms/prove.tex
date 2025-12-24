@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%                     New Properties
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\chead{\textbf{Prove}}
+
+% Optional: add a clearpage if you want the text on its own page
+\clearpage 
+
+% Vertical centering: moves the content to the middle of the page
+\vspace*{\fill} 
+
+% Horizontal centering: centers the text block horizontally
+\begin{center} 
+  % Set a very large font size (e.g., 50pt with 60pt line spacing)
+  {\fontsize{70}{60}\selectfont 
+  \textbf{S O L U T I O N S}
+  }
+\end{center}
+
+% Vertical centering: balances the 'vspace' above
+\vfill 
+
+% Optional: add another clearpage to prevent subsequent text from appearing on the same page
+ \clearpage
+
+\newpage
+
+\subsection*{Show That The Statements Are True}
+
+
+\begin{enumerate}
+\item $\log_ac\cdot\log_cb=\log_ab$
+
+    {\color{blue}
+\begin{align*}
+    \log_ac\cdot\log_cb&=\log_ac\cdot\dfrac{\log_ab}{\log_ac} \makebox[5cm]{\dotfill}\textit{Change of Base}\\
+    &=\cancel{\log_ac}\cdot\dfrac{\log_ab}{\cancel{\log_ac}}=\log_ab\qquad\text{QED}
+\end{align*}
+}
+
+% {\color{blue}
+% \begin{align*}
+%     \log_ac\cdot\log_cb&=\log_ac\cdot\dfrac{\log_ab}{\log_ac} \makebox[5cm]{\dotfill}\textit{Change of Base}\\
+%     &=\cancel{\log_ac}\cdot\dfrac{\log_ab}{\cancel{\log_ac}}=\log_ab\qquad\text{QED}
+% \end{align*}
+% }
+% ---------------------------------------------------------------------------------------
+
+\item $\log_b{1/a}=-\log_b{a}$
+
+{\color{blue}
+\begin{align*}
+    \log_b{1/a}&=\log_b{1}-\log_b{a}\makebox[5cm]{\dotfill}\textit{Quotient Rule}\\
+    &=\cancelto{0}{\log_b{1}}-\log_ba=-\log_ba\makebox[2cm]{\dotfill}\textit{Zero Rule}\quad\text{QED}
+\end{align*}
+}
+
+
+% ---------------------------------------------------------------------------------------
+
+\item $\log_ax=-\log_{1/a}x$
+
+{\color{blue}
+\begin{align*}
+    \log_ax&=y\\
+    a^y&=x\makebox[5cm]{\dotfill}\textit{Definition}\\
+    \left(\dfrac{1}{a}\right)^{-y}&=x\\
+    \log_{1/a}&=-y\makebox[5cm]{\dotfill}\textit{Definition}\\
+    y&=-\log_{1/a}x\\
+     \log_ax&=-\log_{1/a}x\qquad\text{QED}
+\end{align*}
+}
+
+
+% ---------------------------------------------------------------------------------------
+
+\item $\log_{m^n}x^y=\frac{y}{n}\,\log_mx$
+
+    
+{\color{blue}
+\begin{align*}
+    \log_{m^n}x^y&=z\\
+    (m^n)^z&=x^y\makebox[5cm]{\dotfill}\textit{Definition}\\
+    (m^z)^n&=x^y\\
+    m^z&=x^{y/n}\\
+    \log_mx^{y/n}&=z\makebox[5cm]{\dotfill}\textit{Definition}\\
+    \frac{y}{n}\log_mx&=z\makebox[5cm]{\dotfill}\textit{Power Rule}\\
+    \log_{m^n}x^y&=\frac{y}{n}\log_mx\qquad\text{QED}
+\end{align*}
+}
+
+
+\end{enumerate}

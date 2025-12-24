@@ -1,0 +1,259 @@
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%                     EXPRESS AS A SINGLE LOGARITHM
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Express as a single logarithm (when possible)}
+\chead{Express As A Single Logarithm}
+
+\begin{tcolorbox}[title=Note, colback=blue!10!white, colframe=blue!75!black]
+Use the properties to write in simplest form. In particular, use the power, product and quotient rules but in reverse, for example, for the product rule:  $\log_bM + \log_bN = \log_b(M\cdot N)$. 
+\end{tcolorbox}
+\vspace{1cm}
+\begin{enumerate}[resume]
+        \item  $\log_3(5) + \log_3(7)$
+        
+        {\color{blue}
+        \begin{align*}
+            \log_3(5) + \log_3(7)&=\log_3(5\times 7)\makebox[5cm]{\dotfill} \textit{Product Property}\\
+            \Aboxed{&=\log_3(35)}
+        \end{align*}
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+        \item  $\log_2(12) - \log_2(3)$
+        
+
+        {\color{blue}
+        \begin{align*}
+            \log_2(12) - \log_2(3)&=\log_2\left(\dfrac{12}{3}\right) \makebox[5cm]{\dotfill} \textit{Quotient Property}\\
+            &=\log_2(4) &\\
+            \Aboxed{&=\log_2{2^2}=2 \makebox[5cm]{\dotfill}\textit{Inverse Property}}
+        \end{align*}
+        }
+        OR
+        {\color{teal}
+        \begin{align*}
+            \log_2(12) - \log_2(3)&=\log_2(4\times 3) - \log_2(3)\\
+            &=\log_2{4}+\cancel{\log_2{3}}-\cancel{\log_2{3}} \makebox[2.2cm]{\dotfill}\textit{Product Property}\\
+            &=\log_2{4}+\log_2{3}-\log_2{3} &\\
+            &=\log_2(4) &\\
+            \Aboxed{&=\log_2{2^2}=2 \makebox[5cm]{\dotfill}\textit{Inverse Property}}
+        \end{align*}    
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+        \item $\dfrac{1}{2}\log(z)-\log(z-5)+\log(z^2-25)$
+        
+        
+        {\color{blue}
+        \begin{align*}
+            \dfrac{1}{2}\log(z)&-\log(z-5)+\log(z^2-25)=\\
+            &=\log(z^{1/2})-\log(z-5)+\log\left((z+5)(z-5)\right) \makebox[2cm]{\dotfill} \textit{Power Rule}\\
+            &=\log(z^{1/2})-\log(z-5)+\log(z+5) +
+            \log(z-5) \makebox[1cm]{\dotfill} \textit{Product Rule}\\
+            &=\log(z^{1/2})-\cancel{\log(z-5)}+\log(z+5)+ 
+            \cancel{\log(z-5)}\\
+            &=\log(z^{1/2})+\log(z+5)\\
+            &=\log\left(z^{1/2}(z+5)\right)\makebox[2cm]{\dotfill} \textit{Product Rule}\\
+            \Aboxed{&=\log\left(\sqrt{z}\,(z+5)\right)}\\
+        \end{align*}
+        }
+        OR
+        {\color{teal}
+        \begin{align*}
+            \dfrac{1}{2}\log(z)&-\log(z-5)+\log(z^2-25)=\\
+            &=\log(z^{1/2})-\log(z-5)+\log\left(z^2-25\right) \makebox[2cm]{\dotfill} \textit{Power Rule}\\
+            &=\log\left(\dfrac{z^{1/2}}{z-5}\right)+\log\left(z^2-25\right) \makebox[1cm]{\dotfill} \textit{Quotient Rule}\\
+            &=\log\left(\dfrac{z^{1/2}(z^2-25)}{z-5}\right) \makebox[2cm]{\dotfill} \textit{Product Rule}\\
+            &=\log\left(\dfrac{z^{1/2}(z+5)(z-5)}{z-5}\right) \makebox[2cm]{\dotfill} a^2-b^2=(a-b)(a+b)\\
+            &=\log\left(\dfrac{z^{1/2}(z+5)\cancel{(z-5)}}{\cancel{z-5}}\right) \\\
+            &=\log\left(z^{1/2}(z+5)\right)\\
+            \Aboxed{&=\log\left(\sqrt{z}\,(z+5)\right)}\\
+        \end{align*}
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+
+        
+        \item $\dfrac{2}{3}\left( 2\ln(x-1)+\ln x-\ln(x^2-9)-3\ln(x+1)\right)$
+        
+        {\color{blue}
+        \begin{align*}
+            \dfrac{2}{3}&\left( 2\ln(x-1)+\ln x-\ln(x^2-9)-3\ln(x+1)\right)=\\ &=\dfrac{2}{3}\left(\ln(x-1)^2+\ln x-\ln(x^2-9)-\ln(x+1)^3\right)\makebox[2cm]{\dotfill} \textit{Power Rule}\\
+            &=\dfrac{2}{3}\left(\ln x(x-1)^2-\ln(x^2-9)-\ln(x+1)^3\right)\makebox[2cm]{\dotfill} \textit{Product Rule}\\
+            % &=\dfrac{2}{3}\left(\ln \left({x(x-1)^2{(x^2-9)}}\right)-\ln(x+1)^3\right)\makebox[2cm]{\dotfill} \textit{Product Rule}\\
+            &=\dfrac{2}{3}\left(\ln \left(\dfrac{x(x-1)^2}{x^2-9}\right)-\ln(x+1)^3\right)\makebox[2cm]{\dotfill} \textit{Quotient Rule}\\
+            &=\dfrac{2}{3}\ln \left(\dfrac{x(x-1)^2}{(x^2-9)(x+1)^3}\right)\makebox[2cm]{\dotfill} \textit{Quotient Rule}\\
+            &=\dfrac{2}{3}\ln \left(\dfrac{x(x-1)^2}{(x-3)(x+3)(x+1)^3}\right)\makebox[2cm]{\dotfill} a^2-b^2=(a-b)(a+b)\\
+            \Aboxed{&=\ln \left(\dfrac{x(x-1)^2}{(x-3)(x+3)(x+1)^3}\right)^{2/3}\makebox[2cm]{\dotfill} \textit{Power Rule}}\\
+        \end{align*}
+        }
+    
+
+% --------------------------------------------------------------------------------
+        
+        
+        \item $2\log_5(3)$
+        
+
+        {\color{blue}
+        \begin{align*}
+        \Aboxed{2\log_5(3)=\log_5(3^2)=\log_5(9)\makebox[5cm]{\dotfill} \textit{Power Property}}
+        \end{align*}
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+        \item $\log_6(8) + \log_6(2) - \log_6(4)$
+        
+
+        {\color{blue}
+        \begin{align*}
+           \log_6(8) + \log_6(2) - \log_6(4)&=\log_6(8\times 2) - \log_6(4)\makebox[2cm]{\dotfill}\textit{Product Property}\\
+            &=\log_6{16}-\log_6{4} &\\
+            &=\log_6\left(\dfrac{16}{4}\right) \makebox[4cm]{\dotfill}\textit{Quotient Property}\\
+            \Aboxed{&=\log_6(4)}
+        \end{align*}    
+        }
+        OR (Long way...)
+        {\color{teal}
+        \begin{align*}
+            \log_6(8) &+ \log_6(2) - \log_6(4)=\log_6(4\times 2) +\log_6{2}- \log_6(4)&\\
+            &=\cancel{\log_6(4)}+\log_6(2) +\log_6(2)- \cancel{\log_6(4)}\makebox[2cm]{\dotfill}\textit{Product Property}\\
+            &=2\log_6{2} &\\
+            &=\log_2{2^2} \makebox[8cm]{\dotfill}\textit{Power Property}\\
+            \Aboxed{&=\log_6(4)} 
+        \end{align*}    
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+
+        \item $3\log_4(2) + \log_4(5)$
+            
+
+        {\color{blue}
+        \begin{align*}
+           3\log_4(2) + \log_4(5)&=\log_4(2^3) + \log_4(5)\makebox[3cm]{\dotfill}\textit{Power Property}\\
+            &=\log_4(9) + \log_4(5)&\\
+            &=\log_4(9\times 5) \makebox[5cm]{\dotfill}\textit{Product Property}\\
+            \Aboxed{&=\log_4(45)}
+        \end{align*}    
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+
+        \item $\frac{1}{2}\log_5(x) - 3\log_5(y) + \log_5(z)$
+                
+
+        {\color{blue}
+        \begin{align*}
+          \frac{1}{2}\log_5(x) - 3\log_5(y) &+ \log_5(z)=&\\
+          &=\log_5(x^{\frac{1}{2}}) - \log_5(y^3) + \log_5(z)\makebox[1.2cm]{\dotfill}\textit{Power Property}\\
+            &=\log_5(\sqrt{x}) - \log_5(y^3) + \log_5(z)&\\
+            &= \log_5\left(\dfrac{\sqrt{x}}{y^3}\right)+ \log_5(z)\makebox[3cm]{\dotfill}\textit{Quotient Property}\\
+            \Aboxed{&=\log_5\left(\dfrac{z\,\sqrt{x}}{y^3}\right)\makebox[5cm]{\dotfill}\textit{Product Property}}
+        \end{align*}    
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+        \item $2\log_4(x) + \frac{1}{3}\log_4(y) - 4\log_4(z)$
+                
+
+        {\color{blue}
+        \begin{align*}
+          2\log_4(x) + \frac{1}{3}\log_4(y) &- 4\log_4(z) =&\\
+          &=\log_4(x^2) + \log_4(y^{\frac{1}{3}}) - \log_4(z^4)\makebox[2cm]{\dotfill}\textit{Power Property}\\
+            &=\log_4(x^2\cdot y^{\frac{1}{3}}) - \log_4(z^4)\makebox[3cm]{\dotfill}\textit{Product Property}\\
+            &= \log_4\left(\dfrac{x^2 y^{\frac{1}{3}}}{z^4}\right)\makebox[5cm]{\dotfill}\textit{Quotient Property}\\
+            \Aboxed{&=\log_4\left(\dfrac{x^2\sqrt[3]{y}}{z^4}\right)}
+        \end{align*}    
+        }
+    
+
+% --------------------------------------------------------------------------------
+
+        
+        \item $\log_6(x) + 2\log_6(y) - \frac{1}{2}\log_6(z)$
+                
+
+        {\color{blue}
+        \begin{align*}
+          \log_6(x) + 2\log_6(y) &- \frac{1}{2}\log_6(z) =&\\
+          &=\log_6(x) + \log_6(y^2) - \log_6(z^{\frac{1}{2}})\makebox[2.3cm]{\dotfill}\textit{Power Property}\\
+            &=\log_6(x\cdot y^2) - \log_6(z^{\frac{1}{2}})\makebox[4cm]{\dotfill}\textit{Product Property}\\
+            &= \log_6\left(\dfrac{x y^2}{z^{\frac{1}{2}}}\right) \makebox[6cm]{\dotfill}\textit{Quotient Property}\\
+            \Aboxed{&=\log_6\left(\dfrac{x y^2}{\sqrt{z}}\right)}
+        \end{align*}    
+        }
+      
+
+% --------------------------------------------------------------------------------
+      
+        
+        \item $\log_8(4) + \log_8(16) - \log_8(2)$
+                
+
+        {\color{blue}
+        \begin{align*}
+          \log_8(4) + \log_8(16) &- \log_8(2) = \log_8(4) + \log_8(8\times 2) - \log_8(2)\\
+          &=\log_8(4) + \log_8(8)+\cancel{\log_8(2)} - \cancel{\log_8(2)}\makebox[1.3cm]{\dotfill}\textit{Product Property}\\
+            &=\log_8(4) + \log_8(8)&\\
+            &= \log_8(4\times 8) \makebox[7cm]{\dotfill}\textit{Product Property}\\
+            \Aboxed{&=\log_8(32)}
+        \end{align*}    
+        }
+      
+
+% --------------------------------------------------------------------------------
+      
+    
+        \item $\frac{1}{3}\log_6(216) + \frac{2}{5}\log_6(32) - \frac{3}{4}\log_6(81)$
+                
+
+        {\color{blue}
+        \begin{align*}
+          \frac{1}{3}\log_6(216) &+ \frac{2}{5}\log_6(32) - \frac{3}{4}\log_6(81) =&\\
+          &=\log_6(216^{1/3}) + \log_6(32^{2/5}) - \log_6(81^{3/4})\makebox[1cm]{\dotfill}\textit{Power Rule}\\
+           &=\log_6(6) + \log_6((32^{1/5})^2) - \log_6((81^{1/4})^3)&\\
+            &=\log_6(6) + \log_6((2)^2) - \log_6((3)^3)&\\
+            &=\log_6(6) + \log_6(4) - \log_6(27)&\\
+            &=\log_6(6\times 4) - \log_6(27)\makebox[5cm]{\dotfill}\textit{Product Rule}\\
+            \Aboxed{&= \log_6\left(\dfrac{24}{27}\right) \makebox[7cm]{\dotfill}\textit{Quotient Rule}}\\
+        \end{align*}    
+        }
+     
+
+% --------------------------------------------------------------------------------
+   
+    \item $ \sum_{k=1}^{n} \log_a(k)$
+            
+
+    {\color{blue}
+    \begin{align*}
+      \sum_{k=1}^{n} \log_a(k)&=\log_a(1) +\log_a(2)+\cdots +\log_a(n-1)+\log_a(n)&\\
+       &=\log_a(n) +\log_a(n-1)+\cdots +\log_a(2)+\log_a(1)\makebox[1cm]{\dotfill}\textit{reverse the sum}\\
+        &=\log_a(n\cdot (n-1)\cdots 2\cdot 1)\makebox[5cm]{\dotfill}\textit{Product Rule}\\
+        \Aboxed{&=\log_a(n!)}
+    \end{align*}    
+    }
+    
+
+% --------------------------------------------------------------------------------
+
+\end{enumerate}

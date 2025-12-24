@@ -1,0 +1,508 @@
+\subsubsection*{Word Problems}
+\chead{Word Problems}
+
+\begin{enumerate}[resume]
+
+\item \textbf{Sound Intensity:} The decibel level of a sound is given by $L = 10\log\left(\frac{I}{I_0}\right)$, in dB,  where $I$ is the intensity of the sound, in W/m$^2$,  and $I_0 = 10^{-12}$ W/m$^2$ is the threshold of hearing. If a rock concert measures 115 dB, what is the intensity of the sound?
+
+{\color{blue}
+
+Plug $L=115 $dB and  $I_0 = 10^{-12}$ W/m$^2$ into the equation and solve for $I$. There is no need to carry the  units around. All the terms in the proper units so the result will be in its proper units.
+
+\begin{align*}
+    115 &= 10\log\left(\frac{I}{10^{-12}}\right) \\
+    11.5 &= \log\left(\frac{I}{10^{-12}}\right) \\
+    10^{11.5} &= \frac{I}{10^{-12}} \\
+    I &= 10^{11.5} \times 10^{-12} = 10^{-0.5} \\
+    I &\approx 0.316 \text{ W/m}^2
+\end{align*}
+
+\fbox{$I=0.32 $W/m$^2$}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $I=0.32 $W/m$^2$
+% \end{tcolorbox}
+
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Radioactive Decay:} Carbon-14 has a half-life of 5,730 years. If a fossil contains 30\% of its original Carbon-14, how old is the fossil? Use the formula $N(t) = N_0 e^{-kt}$ where $N_0$ is the amount of original sample, $k$ is the radio active decay constant, and $t$ is time in years. 
+
+{\color{blue}
+
+Use the half-life to compute $k$: 50\% of the sample is gone, and thus 50\% is left, after 5,730 years.
+    \begin{align*}
+        0.5 N_0 &= N_0 e^{-k(5730)} \\
+        0.50 &= e^{-5730k} \\
+        \ln(0.5)&=-5730k\\
+        k&=\dfrac{\ln(0.5)}{-5730}\approx 0.00012097
+    \end{align*}
+
+Now use this value of $k$ throughout the problem to find $t$ when $N_0=0.3N$. 
+    \begin{align*}
+        0.30 N_0 &= N_0 e^{-kt} \\
+        0.30 &= e^{-0.00012097t} \\
+        \ln(0.30) &= -0.00012097t \\
+        t &= \frac{\ln(0.30)}{-0.00012097} \\
+        t &\approx 9,953 \text{ years}
+    \end{align*}
+
+\fbox{$t=9,953$ years.}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $t=9,953$ years.
+% \end{tcolorbox}
+
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Population Growth:} A city's population grows according to $P(t) = P_0 e^{0.025t}$, where $t$ is in years, and $P_0$ is the initial population. How long will it take for the population to triple?
+
+{\color{blue}
+Find $t$ when $P=3P_0$
+    \begin{align*}
+        3P_0 &= P_0 e^{0.025t} \\
+        3 &= e^{0.025t} \\
+        \ln(3) &= 0.025t \\
+        t &= \frac{\ln(3)}{0.025} \\
+        t &\approx 43.94 \text{ years}
+        \end{align*}
+
+
+\fbox{$t=43.94$ years.}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $t=43.94$ years.
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Compound Interest:} An investment of \$5,000 earns 6\% annual interest compounded monthly. How long will it take for the investment to grow to \$8,000? Use $A = P\left(1 + \frac{r}{n}\right)^{nt}$.
+
+{\color{blue}
+Find $t$ when $P=\$5,000$, $r=0.06$, $n=12$ (compounded monthly), and $A=\$8,000 $
+
+\begin{align*}
+8000 &= 5000\left(1 + \frac{0.06}{12}\right)^{12t} \\
+1.6 &= (1.005)^{12t} \\
+\ln(1.6) &= \ln\left(1.005)^{12t}\right) \\
+\ln(1.6) &= 12t \ln(1.005) \\
+t &= \frac{\ln(1.6)}{12\ln(1.005)} \\
+t &\approx 7.85 \text{ years}
+\end{align*}
+
+\fbox{$t=7.85$ years.}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $t=7.85$ years.
+% \end{tcolorbox}
+
+
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Sound Intensity:} A library has a noise level of 40 dB and a busy street has a noise level of 70 dB. How many times more intense is the sound on the busy street compared to the library?
+
+
+{\color{blue}
+
+    Let $L_1=40$ dB be the noise level in the library and $L_2=70$ dB be the noise level on a busy street. 
+    
+    Let $L_1=40$ dB be the noise level in the library
+    \begin{align*}
+        L_1 &= 10\log\left(\frac{I_1}{I_0}\right) = 40 \\
+        &\log\left(\frac{I_1}{I_0}\right) = 4
+    \end{align*}
+
+    $L_2=70$ dB be the noise level on a busy street. 
+    \begin{align*}
+        L_2 &= 10\log\left(\frac{I_2}{I_0}\right) = 70 \\
+        &\log\left(\frac{I_2}{I_0}\right) = 7 \\
+    \end{align*}
+    
+    Subtract the two equations
+    \begin{align*}
+       \log\left(\frac{I_2}{I_0}\right)- \log\left(\frac{I_1}{I_0}\right)&= 7-4 \\
+       \log\left(\dfrac{\frac{I_2}{I_0}}{\frac{I_1}{I_0}}\right)&=3\\
+       \log\left(\dfrac{\frac{I_2}{\cancel{I_0}}}{\frac{I_1}{\cancel{I_0}}}\right)&=3\\
+       \log\left(\dfrac{I_2}{I_1}\right)&=3\\
+       \dfrac{I_2}{I_1}&=10^3=1,000\\
+    \end{align*}
+
+\fbox{1,000 times more intense}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% 1,000 times more intense
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Radioactive Decay:} Plutonium-239 has a half-life of 24,100 years. How long will it take for a sample to decay to 10\% of its original amount?
+
+{\color{blue}
+\begin{align*}
+k &= \frac{\ln(2)}{24100} \\
+0.10 &= e^{-kt} \\
+\ln(0.10) &= -\frac{\ln(2)}{24100}t \\
+t &= \frac{24100 \ln(0.10)}{-\ln(2)} \\
+t &\approx 80,061 \text{ years}
+\end{align*}
+
+
+\fbox{$t=80,061$ years.}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $t=80,061$ years. 
+% \end{tcolorbox}
+
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Logistic Growth:} A population of bacteria grows according to $P(t) = \frac{5000}{1 + 49e^{-0.8t}}$, where $t$ is in hours. How long will it take for the population to reach 4,000?
+
+{\color{blue}
+    
+    \begin{align*}
+        4000 &= \frac{5000}{1 + 49e^{-0.8t}} \\
+        1 + 49e^{-0.8t} &= \dfrac{5000}{4000} \\
+        1 + 49e^{-0.8t} &= 1.25 \\
+        49e^{-0.8t} &= 0.25 \\
+        e^{-0.8t} &= \dfrac{0.25}{49} \\
+        -0.8t &= \ln\left(\frac{0.25}{49}\right) \\
+        t &= \frac{\ln(0.25/49)}{-0.8} \\
+        t &\approx 6.61 \text{ hours}
+    \end{align*}
+
+
+\fbox{The population will reach 4,000 in $t=6.61$ hours}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% The population will reach 4,000 in $t=6.61$ hours
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Compound Interest:} You invest \$10,000 at 4.5\% annual interest. Compare the time it takes to double your money when compounded (a) annually, (b) quarterly, and (c) continuously (use $A = Pe^{rt}$ for continuous compounding and $A=P\left(1+\dfrac{r}{n}\right)^{rt}$).
+
+{\color{blue}
+Obtain a general equation for $t$ for both situation then plug in the specific values for each situation.
+
+For the compound interest
+\begin{align*}
+    A &= P\left(1+\dfrac{r}{n}\right)^{nt}\\
+    \dfrac{A}{P}&=\left(1+\dfrac{r}{n}\right)^{nt}\\
+    \ln\left(\dfrac{A}{P}\right)&=\ln\left(1+\dfrac{r}{n}\right)^{nt}\\
+    \ln\left(\dfrac{A}{P}\right)&=(n\,t)\ln\left(1+\dfrac{r}{n}\right)\\
+    t&=\dfrac{\ln\left(\dfrac{A}{P}\right)}{n\cdot \ln\left(1+\dfrac{r}{n}\right)}\\
+\end{align*}
+For continuous compounding:
+\begin{align*}
+    A &= Pe^{rt}\\
+    \dfrac{A}{P}&=e^{rt}\\
+    \ln\left(\dfrac{A}{P}\right)&=rt\\
+    t&=\dfrac{1}{r}\ln\left(\dfrac{A}{P}\right)\\
+\end{align*}
+
+\begin{align*}
+\text{(a) Annually: $n=1$;}&\quad  t=\dfrac{\ln\left(\dfrac{2000}{10000}\right)}{1\cdot \ln\left(1+\dfrac{0.045}{1}\right)}\approx 15.75 \text{ years}\\
+\text{(b) Quarterly: $n=4$;}&\quad t=\dfrac{\ln\left(\dfrac{2000}{10000}\right)}{4\cdot \ln\left(1+\dfrac{0.045}{4}\right)}\approx 15.52 \text{ years}\\
+\text{(c) Continuously: }&\quad t=\dfrac{1}{0.045}\ln\left(\dfrac{2000}{10000}\right) \approx 15.40 \text{ years}
+\end{align*}
+
+\fbox{(a) 15.75 years, (b) 15.52 years, (c) 15.40 years}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% \textbf{Answer:} (a) 15.75 years, (b) 15.52 years, (c) 15.40 years
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Population Growth:} The population of a town was 25,000 in 2010 and 32,000 in 2020. Assuming exponential growth $P(t) = P_0 e^{kt}$, what will the population be in 2030?
+
+{\color{blue}
+Use the given information to compute $k$ the use it to compute the answer.\\
+The initial population is $P_0=25,000$. 10 years later, the population $P(10)=32,000$. Plug the numbers in and get $k$:
+
+\begin{align*}
+32000 &= 25000e^{10k} \\
+1.28 &= e^{10k} \\
+10k &= \ln(1.28)\\
+k&=\dfrac{\ln(1.28)}{10} \approx 0.02469
+\end{align*}
+
+Now get the population after 30 years
+
+\begin{align*}
+P(30) &= 25000e^{0.02469(30)} \\
+P(30) &\approx 51,968
+\end{align*}
+
+
+\fbox{The population in 20230 would be 51,968 people.}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% The population in 20230 would be 51,968 people.
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Sound Intensity:} The sound intensity level increases by 3 dB. By what factor does the actual intensity increase?
+
+{\color{blue}
+Let $L_1$ be the original sound level with intensity $I_1$ and $L_2$ the new sound level with intensity $I_2$, which is 3 dB higher.  
+\[
+L_1=10\log\left(\dfrac{I_1}{I_0}\right)
+\]
+\[
+L_2=10\log\left(\dfrac{I_2}{I_0}\right)
+\]
+Given $L_2-L_1=3$ dB
+
+    \begin{align*}
+       3&=10\log\left(\frac{I_2}{I_0}\right)- 10\log\left(\frac{I_1}{I_0}\right)\\
+       3&=10\log\left(\dfrac{\frac{I_2}{I_0}}{\frac{I_1}{I_0}}\right)\\
+       \dfrac{3}{10}&=\log\left(\dfrac{\frac{I_2}{\cancel{I_0}}}{\frac{I_1}{\cancel{I_0}}}\right)\\
+       0.3&=\log\left(\dfrac{I_2}{I_1}\right)\\
+       10^{0.3}&=\dfrac{I_2}{I_1}\\
+       \dfrac{I_2}{I_1}&\approx 2.00
+    \end{align*}
+
+
+\fbox{The intensity increases by a factor of 2}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% The intensity increases by a factor of 2
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Radioactive Decay:} Iodine-131 is used in medical treatments and has a half-life of 8 days. A patient receives a 50 mCi dose. How long will it take for the radioactivity to decrease to a safe level of 2 mCi?
+
+
+{\color{blue}
+Use $N(t)=N_0\,2^{-t/t_0}$, where $N_0$ is the initial amount and $t_0$ is the half-life of the substance. 
+\begin{align*}
+2 &= 50 \cdot 2^{-t/8} \\
+\dfrac{2}{50} &= 2^{t/8} \\
+0.04&= 2^{t/8} \\
+\log(0.04) &= -\frac{t}{8}\log(2) \\
+t &= -\frac{8\log(0.04)}{\log(2)} \\
+t &\approx 37.29 \text{ days}
+\end{align*}
+
+
+\fbox{It will take 37.29 days for the radioactivity to decrease to safe levels.} }
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% It will take 37.29 days for the radioactivity to decrease to safe levels. 
+% \end{tcolorbox}
+
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Compound Interest:} Which investment will grow faster: \$5,000 at 7\% compounded quarterly or \$5,000 at 6.9\% compounded continuously? Calculate the value of each after 10 years.
+
+{\color{blue}
+The present value $P$ for both cases is \$5,000. The interest rate is $r_1=0.07$ for quarterly ($n=4$) compounding, while it's $r_2=0.069$ for continuous compounding. $t=10$ years for both. 
+
+\begin{align*}
+\text{Quarterly: } A_1 &=P\left(1+\dfrac{r_1}{n}\right)^{nt}\\
+&= 5000\left(1 + \frac{0.07}{4}\right)^{4\times 10} \\
+&\approx \$10,048.27 \\
+\text{Continuously: } A_2&=Pe^{r_2t}\\
+                 &= 5000e^{0.069(10)} \\
+                 &\approx \$9,922.75
+\end{align*}
+
+
+\fbox{7\% compounded quarterly grows faster; \$10,048.27 vs \$9,922.75}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% 7\% compounded quarterly grows faster; \$10,048.27 vs \$9,922.75
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Logistic Growth:} A fish population in a lake follows the logistic model $P(t) = \frac{8000}{1 + 15e^{-0.5t}}$, where $t$ is in years. When will the population reach 6,000 fish?
+
+{\color{blue}
+
+\begin{align*}
+    6000 &= \frac{8000}{1 + 15e^{-0.5t}} \\
+    1 + 15e^{-0.5t} &= \dfrac{8000}{6000} \\
+    1 + 15e^{-0.5t} &= \frac{4}{3}-1 \\
+    15e^{-0.5t} &= \frac{1}{3}\\
+    e^{-0.5t} &= \frac{1}{15\times 3} \\
+    e^{-0.5t} &= \frac{1}{45} \\
+    -0.5t&=-\ln{(45)}\makebox[3cm]{\dotfill}\textit{$\ln(1/x)=-\ln(x)$}\\
+    t &= \frac{\ln(45)}{0.5} \\
+    t &\approx 7.62 \text{ years}
+\end{align*}
+
+\fbox{The population will reach 6,000 fish in 7.62 years}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% The population will reach 6,000 fish in 7.62 years
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{pH Levels:} The pH of a solution is given by $\text{pH} = -\log[H^+]$, where $[H^+]$ is the hydrogen ion concentration in moles per liter. If a solution has a pH of 3.5, what is the hydrogen ion concentration?
+
+{\color{blue}
+\begin{align*}
+3.5 &= -\log[H^+] \\
+-3.5 &= \log[H^+] \\
+[H^+] &= 10^{-3.5} \\
+[H^+] &\approx 3.16 \times 10^{-4} \text{ mol/L}
+\end{align*}
+
+
+
+\fbox{$3.16 \times 10^{-4}$ mol/L}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $3.16 \times 10^{-4}$ mol/L\end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Population Growth:} A bacteria culture doubles every 3 hours. If there are initially 500 bacteria, how long will it take to reach 50,000 bacteria?
+
+{\color{blue}
+Use $N(t)=N_02^{t/t_0}$, where $N_0$ is the initial amount and $t_0$ is the half-life of the substance. 
+    \begin{align*}
+        N(t) &= 500 \cdot 2^{t/3} \\
+        50000 &= 500 \cdot 2^{t/3} \\
+        100 &=\cdot 2^{t/3} \\
+        \ln(100) &=\ln\left(2^{t/3}\right)\\
+        \ln(100) &=\dfrac{t}{3}\ln(2)\\
+        t&=\dfrac{3\ln(100)}{\ln(2)}\\
+        t&\approx 19.93 \text{ hours}
+    \end{align*}
+
+
+\fbox{It will take 19.93 hours for the bacteria to reach 50,000.}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% It will take 19.93 hours for the bacteria to reach 50,000. 
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Compound Interest:} An investment earns 5.5\% annual interest compounded daily (365 days). How much should you invest now to have \$25,000 in 8 years? 
+
+{\color{blue}
+Use $A=P\left(1-\dfrac{r}{n}\right)^{nt}$, where $A=\$2,5000$ is the future value, $P$ is the principal (current value), $r=0.055$ is the annual interest rate, $n=365$ is the number of time compounded annually, and $t=8$ years is the time. 
+\begin{align*}
+25000 &= P\left(1 + \frac{0.055}{365}\right)^{365(8)} \\
+P &= 25000\times \left(1 + \frac{0.055}{365}\right)^{-350(8)} \\
+P &\approx \$16,204.88
+\end{align*}
+
+\fbox{We should invest $P=\$16,204.88$}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% We should invest $P=\$16,204.88$
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Sound Intensity:} Two sounds have intensities $I_1$ and $I_2$, where $I_2 = 100 I_1$. What is the difference in their decibel levels?
+{\color{blue}
+
+Let $L_1$ be the noise level of the first source, and $L_2$ be the noise level of the second source 
+    
+    Let $L_1$ be the noise level of the first source
+    \[
+     L_1 &= 10\log\left(\frac{I_1}{I_0}\right)
+    \] 
+
+    $L_2$ be the noise level of the second source 
+    \[
+        L_2 &= 10\log\left(\frac{I_2}{I_0}\right)
+    \] 
+    
+    Subtract the two equations
+    \begin{align*}
+       L_2-L_1&=10\log\left(\frac{I_2}{I_0}\right)- 10\log\left(\frac{I_1}{I_0}\right) \\
+       &=10\log\left(\dfrac{\frac{I_2}{I_0}}{\frac{I_1}{I_0}}\right)\\
+       &=10\log\left(\dfrac{\frac{I_2}{\cancel{I_0}}}{\frac{I_1}{\cancel{I_0}}}\right)\\
+       &=10\log\left(\dfrac{I_2}{I_1}\right)\\
+       &=10\log\left(\dfrac{100I_1}{I_1}\right)\\
+       &=10\log(100)\\
+       &=10\log(10^2)\\
+       &=10\times 2=20\\
+    \end{align*}
+
+
+\fbox{$L_2-L_1=20$ dB}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% $L_2-L_1=20$ dB
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Radioactive Decay:} Strontium-90 has a half-life of 28.8 years. If a sample contains 80 grams initially, how much will remain after 50 years?
+
+{\color{blue}
+Use $N(t)=N_0\left(\dfrac{1}{2}\right)^{t/t_0}$, where $N_0$ is the initial amount and $t_0$ is the half-life of the substance. 
+    \begin{align*}
+        N(t) &= 80 \cdot \left(\frac{1}{2}\right)^{t/28.8} \\
+        N(50) &= 80 \cdot \left(\frac{1}{2}\right)^{50/28.8} \\
+        N(50) &\approx 24.84 \text{ grams}
+    \end{align*}
+}
+OR\\
+We could have started the problem this way
+
+{\color{teal}
+Use $N(t)=N_02^{-t/t_0}$, where $N_0$ is the initial amount and $t_0$ is the half-life of the substance. 
+    \begin{align*}
+        N(t) &= 80 \cdot 2^{-t/28.8} \\
+        N(50) &= 80 \cdot 2^{-50/28.8} \\
+        N(50) &\approx 24.84 \text{ grams}
+    \end{align*}
+
+\fbox{24.84 grams remain after 50 years.}}
+
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% 24.84 grams remain after 50 years. 
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Logistic Growth:} A rumor spreads through a school of 2,000 students according to $N(t) = \frac{2000}{1 + 1999e^{-0.6t}}$, where $t$ is in days. How long will it take for 1,500 students to hear the rumor?
+{\color{blue}
+    \begin{align*}
+        1500 &= \frac{2000}{1 + 1999e^{-0.6t}} \\
+        1500(1 + 1999e^{-0.6t}) &= 2000 \\
+        1 + 1999e^{-0.6t} &= \dfrac{2000}{1500} \\
+        1 + 1999e^{-0.6t} &= \dfrac{4}{3} \\
+        1999e^{-0.6t} &= \dfrac{1}{3} \\
+        e^{-0.6t} &= \dfrac{1}{3\times 1999} \\
+        e^{-0.6t} &= \dfrac{1}{5997} \\
+        -0.6t &=\ln\left(\dfrac{1}{5997}\right)\\
+        t &= -\dfrac{1}{0.6}\times\ln\left(\dfrac{1}{5997}\right) \\
+        t &\approx 14.65 \text{ days}
+    \end{align*}
+
+
+\fbox{14.65 days}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% 14.65 days
+% \end{tcolorbox}
+% -------------------------------------------------------------------------------
+
+\newpage
+\item \textbf{Compound Interest:} You have \$20,000 to invest. Bank A offers 6.2\% compounded monthly, and Bank B offers 6\% compounded continuously. Which bank will give you more money after 15 years, and by how much?
+{\color{blue}
+
+Let $A_1$ be the future value from bank A. Since it offers regular compounding , use $A_1=P\left(1+\dfrac{r}{n}\right)^{nt}$, where $r=0.062$, $n=12$, and  $t=15$ years.
+\[
+A_1 = 20000\left(1 + \frac{0.062}{12}\right)^{12\times 15} \approx \$49,833.85 
+\]
+Let $A_2$ be the future value from bank B. Since it offers continuous compounding, use $A_2=Pe^{rt}$, where $r=0.063$ and  $t=15$ years. 
+\[
+A_2 = 20000e^{0.06(15)} \approx \$49,182.23 
+\]
+
+\text{Difference: } \$49,833.85 - \$49,182.23 = \$651.62\\
+
+
+\fbox{Bank A gives more by \$651.62 (\$49,833.85 vs \$49,182.23)}}
+% \begin{tcolorbox}[title=Solution, colback=blue!10!white, colframe=blue!75!black]
+% Bank A gives more by \$651.62 (\$49,833.85 vs \$49,182.23)
+% \end{tcolorbox}
+
+\end{enumerate}
